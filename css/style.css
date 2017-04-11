@@ -18,75 +18,100 @@
   src: local("fonts/FontAwesome");
   src: url("fonts/fontawesome.woff") format("woff");
   src: url("fonts/fontawesome.ttf") format("truetype"); }
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+button {
+  outline: none;
+  border: none; }
+
 button:focus, input:focus {
   outline: none; }
 
 .header {
-  min-width: 100%;
   background-image: url("img/bg_4_1.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center; }
 
-.nav_container {
-  background-color: white; }
+.bg_header {
+  background-color: rgba(255, 255, 255, 0.8); }
 
 .logo {
-  margin-top: 1em; }
+  margin-top: 0.8em; }
 
-.nav_list {
-  margin-top: 1.7em; }
-  .nav_list ul.list li {
-    display: inline;
-    text-transform: uppercase;
-    list-style-type: none;
-    color: #96a6a7;
-    font-size: 0.85em;
-    padding: 0 0.6em; }
-  .nav_list ul.list a {
-    color: #96a6a7; }
-    .nav_list ul.list a:hover {
-      color: #e73820;
-      opacity: 0.6; }
+.nav_col {
+  margin-top: 1.5em; }
+
+.navigation_list li {
+  display: inline;
+  padding-left: 1em; }
+.navigation_list a {
+  font-family: "GothamBook";
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #96a6a7;
+  text-decoration: none; }
+  .navigation_list a:hover {
+    text-decoration: none;
+    color: #e94e38; }
 
 .search_nav button {
-  border-radius: 0;
-  width: 4.625em;
-  height: 4.9em;
+  width: 4.9em;
+  height: 4.4em;
+  border: none;
   background-color: #e2dee0; }
   .search_nav button:hover {
-    background-color: #d4d2d3;
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1); }
+    background-color: #edeced; }
 
 .nav_login {
-  font-size: 0.85em;
-  font-family: "Myriad Pro"; }
+  margin-left: -0.25em;
+  font-size: 0.875em;
+  color: white; }
   .nav_login button {
-    margin-left: -0.7em;
     text-align: left;
     width: 100%;
-    height: 5.7em;
-    text-transform: uppercase;
-    border-radius: 0;
-    background-color: #e94e38; }
+    height: 5em;
+    background-color: #e94e38;
+    font-family: "GothamBook"; }
     .nav_login button:hover {
-      background-color: #e73820;
-      transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      -webkit-transform: scale(1.1); }
+      border: none;
+      background-color: #ee6653; }
     .nav_login button span {
-      padding-right: 1em;
-      padding-left: 3em; }
+      padding-left: 1em;
+      padding-right: 0.5em; }
     .nav_login button a {
+      text-transform: uppercase;
+      display: block;
       color: white; }
+      .nav_login button a:hover {
+        color: white;
+        text-decoration: none; }
 
-.search_container h3 {
+.row h2 {
+  padding: 1.8em 0 1em 0;
   text-align: center;
-  padding: 2.5em 7em 1em 0;
-  color: white;
-  text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.15);
-  font-size: 1.6em; }
+  font-family: "GothamBook";
+  color: white; }
+
+.search_input {
+  font-family: "GothamBook";
+  font-size: 1.1em;
+  color: white; }
+  .search_input input[type=text] {
+    padding-left: 1.5em;
+    width: 13em;
+    height: 3.125em;
+    display: inline-block;
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0.1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4em; }
+    .search_input input[type=text]:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
 
 /*# sourceMappingURL=style.css.map */
