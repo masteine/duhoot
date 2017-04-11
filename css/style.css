@@ -1,33 +1,92 @@
 @font-face {
   font-family: "gothambold1";
-  src: url("./gothambold1.eot");
-  src: local("gothambold1"), url("./gothambold1.woff") format("woff"), url("./gothambold1.ttf") format("truetype"); }
+  src: url("fonts/gothambold1.eot");
+  src: url("fonts/gothambold1.eot?#iefix");
+  src: url("fonts/gothambold1.woff") format("woff");
+  src: url("fonts/gothambold1.ttf") format("truetype"); }
 @font-face {
   font-family: "GothamBook";
-  src: url("./GothamBook.eot");
-  src: local("GothamBook"), url("./GothamBook.woff") format("woff"), url("./GothamBook.ttf") format("truetype"); }
-.navigation {
-  border-bottom: 1px solid black; }
+  src: url("fonts/GothamBook.eot");
+  src: url("fonts/GothamBook.eot?#iefix");
+  src: local("GothamBook");
+  src: url("fonts/GothamBook.woff") format("woff");
+  src: url("fonts/GothamBook.ttf") format("truetype"); }
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fonts/fontawesome.eot");
+  src: url("fonts/fontawesome.eot#iefix");
+  src: local("fonts/FontAwesome");
+  src: url("fonts/fontawesome.woff") format("woff");
+  src: url("fonts/fontawesome.ttf") format("truetype"); }
+button:focus, input:focus {
+  outline: none; }
+
+.header {
+  min-width: 100%;
+  background-image: url("img/bg_4_1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.nav_container {
+  background-color: white; }
 
 .logo {
-  margin-top: 0.7em; }
+  margin-top: 1em; }
 
 .nav_list {
-  margin-top: 1.5em; }
-  .nav_list ul li {
+  margin-top: 1.7em; }
+  .nav_list ul.list li {
     display: inline;
     text-transform: uppercase;
     list-style-type: none;
     color: #96a6a7;
-    font-family: "Myriad Pro";
     font-size: 0.85em;
-    padding: 0 0.4em; }
+    padding: 0 0.6em; }
+  .nav_list ul.list a {
+    color: #96a6a7; }
+    .nav_list ul.list a:hover {
+      color: #e73820;
+      opacity: 0.6; }
 
-.search {
-  width: 4.62em;
-  height: 4.62em;
+.search_nav button {
+  border-radius: 0;
+  width: 4.625em;
+  height: 4.9em;
   background-color: #e2dee0; }
-  .search i {
-    margin: 1.4em 0 0 0.85em; }
+  .search_nav button:hover {
+    background-color: #d4d2d3;
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1); }
+
+.nav_login {
+  font-size: 0.85em;
+  font-family: "Myriad Pro"; }
+  .nav_login button {
+    margin-left: -0.7em;
+    text-align: left;
+    width: 100%;
+    height: 5.7em;
+    text-transform: uppercase;
+    border-radius: 0;
+    background-color: #e94e38; }
+    .nav_login button:hover {
+      background-color: #e73820;
+      transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1); }
+    .nav_login button span {
+      padding-right: 1em;
+      padding-left: 3em; }
+    .nav_login button a {
+      color: white; }
+
+.search_container h3 {
+  text-align: center;
+  padding: 2.5em 7em 1em 0;
+  color: white;
+  text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.15);
+  font-size: 1.6em; }
 
 /*# sourceMappingURL=style.css.map */
