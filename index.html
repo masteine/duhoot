@@ -39,20 +39,52 @@
 				<div class="row">
 					<h2>What are you looking for?</h2>
 				</div>
-				<div class="input col-md-12"></div>
+				<div class="input col-md-12">
 					<div class="search_input row">
-						<input type="text" autocomplete="off" value="Dubai">
-						<input type="text" autocomplete="off" value="Education">
+						<form action="">
+							<input type="text" autocomplete="off" placeholder="Dubai">
+							<input type="text" autocomplete="off" placeholder="Education">
+							<input id="input_d"type="text" autocomplete="off" placeholder="Keyword, name, date, ...">
+							<button type="submit" form="action" value="Search">Search</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
 
 
-
+	<div class="search_filter">
+		<div class="container-fluid">
+			<div class="search_small_panel container">
+				<div class="topic col-md-4">
+					<ul>
+						<li><a href="#">Recommended</a></li>
+						<li><a href="#">latest</a></li>
+						<li><a href="#">Highlights</a></li>
+					</ul>
+				</div>
+				<div class="filter_input col-md-4">
+					<form action="">
+						<input id="input_place_filter" type="text" autocomplete="off" placeholder="dubai">
+						<input id="input_map_filter" type="button" autocomplete="off" value="show map">
+					</form>
+				</div>
+				<div class="filter_icon_list col-md-4">
+					<ul>
+						<li id="filter_icon_text">filter :</li>
+						<li id="filter_icon_icon"><img src="css/img/f_icon_1.png"></li>
+						<li id="filter_icon_icon"><img src="css/img/f_icon_2.png"></li>
+						<li id="filter_icon_icon"><img src="css/img/f_icon_3.png"></li>
+						<li id="filter_icon_icon"><img src="css/img/f_icon_4.png"></li>
+						<li id="filter_icon_icon"><img src="css/img/f_icon_5.png"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	</div>
 
 
 </body>
 </html>
-
