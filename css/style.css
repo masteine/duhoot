@@ -30,6 +30,10 @@ button {
 button:focus, input:focus {
   outline: none; }
 
+body {
+  background-color: #f3f1f2;
+  background-size: cover; }
+
 .header {
   background-image: url("img/bg_4_1.png");
   -webkit-background-size: cover;
@@ -61,7 +65,7 @@ button:focus, input:focus {
     color: #e94e38; }
 
 .search_nav button {
-  width: 4.9em;
+  width: 4.8em;
   height: 4.4em;
   border: none;
   background-color: #e2dee0; }
@@ -69,7 +73,7 @@ button:focus, input:focus {
     background-color: #edeced; }
 
 .nav_login {
-  margin-left: -0.25em;
+  margin-left: -0.7em;
   font-size: 0.875em;
   color: white; }
   .nav_login button {
@@ -102,8 +106,12 @@ button:focus, input:focus {
   font-family: "GothamBook";
   font-size: 1.1em;
   color: white; }
+  .search_input form {
+    width: 60%;
+    margin: 0 auto; }
   .search_input input[type=text] {
-    padding-left: 1.5em;
+    margin: 0 0 1.5em 1.5em;
+    padding-left: 2em;
     width: 13em;
     height: 3.125em;
     display: inline-block;
@@ -113,5 +121,121 @@ button:focus, input:focus {
     border-radius: 4em; }
     .search_input input[type=text]:hover {
       background-color: rgba(255, 255, 255, 0.3); }
+  .search_input input[type="text"]::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.55); }
+  .search_input input[type="text"]:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.55); }
+  .search_input input[type="text"]::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.55); }
+  .search_input input[type="text"]:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.55); }
+  .search_input input#input_d {
+    width: 28em; }
+  .search_input button[type="submit"] {
+    display: block;
+    margin: 0 0 1.8em 10.5em;
+    height: 3.125em;
+    font-family: "GothamBook";
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.15);
+    font-size: 1.1em;
+    background-color: #e94e38;
+    box-shadow: 0px 2px 0px 0px rgba(193, 65, 46, 0.004);
+    -moz-box-shadow: 0px 2px 0px 0px rgba(193, 65, 46, 0.004);
+    -webkit-box-shadow: 0px 2px 0px 0px rgba(193, 65, 46, 0.004);
+    width: 140px;
+    height: 60px;
+    border-radius: 4em; }
+    .search_input button[type="submit"]:hover {
+      background-color: #d4695a; }
+
+.search_filter {
+  background-color: white;
+  border-bottom: 1px solid rgba(150, 166, 167, 0.5); }
+
+.topic ul {
+  margin-left: -10px;
+  margin-top: 1.5em;
+  padding-left: 0; }
+.topic li {
+  display: inline;
+  padding-right: 1em; }
+.topic a {
+  font-family: "GothamBook";
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #96a6a7;
+  text-decoration: none;
+  font-weight: bold; }
+  .topic a:hover {
+    text-decoration: none;
+    color: #e94e38; }
+
+.filter_input {
+  margin-left: -10px;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+  .filter_input form {
+    display: inline-block;
+    margin: 0 auto; }
+    .filter_input form input[type="text"] {
+      padding-left: 1em;
+      margin-left: 0.5em;
+      width: 11em;
+      height: 3em;
+      border-radius: 4em;
+      font-family: "GothamBook";
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.75em; }
+    .filter_input form input[type="button"] {
+      padding-left: 1.5em;
+      text-align: left;
+      width: 11em;
+      height: 3em;
+      border-radius: 4em;
+      font-family: "GothamBook";
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.75em;
+      background-color: #1baf5d;
+      border: none;
+      color: white; }
+    .filter_input form #input_place_filter {
+      border: 1px solid rgba(150, 166, 167, 0.9); }
+      .filter_input form #input_place_filter:hover {
+        background-color: #f0f0f0; }
+    .filter_input form input[type="text"]::-webkit-input-placeholder {
+      color: rgba(233, 78, 56, 0.9); }
+    .filter_input form input[type="text"]:-ms-input-placeholder {
+      color: rgba(233, 78, 56, 0.9); }
+    .filter_input form input[type="text"]::-moz-placeholder {
+      color: rgba(233, 78, 56, 0.9); }
+    .filter_input form input[type="text"]:-moz-placeholder {
+      color: rgba(233, 78, 56, 0.9); }
+    .filter_input form input#input_map_filter:hover {
+      background-color: rgba(27, 175, 93, 0.9); }
+
+.filter_icon_list ul {
+  margin-left: -10px;
+  margin-top: 1em;
+  padding-left: 0; }
+.filter_icon_list li {
+  display: inline;
+  padding-right: 0.3em; }
+.filter_icon_list li#filter_icon_text {
+  font-family: "GothamBook";
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #96a6a7;
+  text-decoration: none;
+  font-weight: bold; }
+.filter_icon_list li#filter_icon_text {
+  display: inline-block; }
+.filter_icon_list img:hover {
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3); }
 
 /*# sourceMappingURL=style.css.map */
