@@ -18,6 +18,14 @@
   src: local("fonts/FontAwesome");
   src: url("fonts/fontawesome.woff") format("woff");
   src: url("fonts/fontawesome.ttf") format("truetype"); }
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("/fonts/GothamProMedium/GothamProMedium.eot");
+  src: url("/fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff");
+  src: url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 a {
   text-decoration: none; }
   a:hover {
@@ -31,8 +39,7 @@ button:focus, input:focus {
   outline: none; }
 
 body {
-  background-color: #f3f1f2;
-  background-size: cover; }
+  background-color: #f3f1f2; }
 
 .header {
   background-image: url("img/bg_4_1.png");
@@ -96,7 +103,7 @@ body {
         color: white;
         text-decoration: none; }
 
-.row h2 {
+.search_row h2 {
   padding: 1.8em 0 1em 0;
   text-align: center;
   font-family: "GothamBook";
@@ -237,5 +244,222 @@ body {
   -ms-transform: scale(1.3);
   -webkit-transform: scale(1.3);
   transform: scale(1.3); }
+
+.posts {
+  background-color: #f3f1f2; }
+
+.posts_container {
+  padding-left: 0px;
+  padding-right: 0px; }
+  .posts_container .posts_small_row_1 {
+    padding-left: 0px;
+    padding-right: 0px; }
+  .posts_container .post_sm_1, .posts_container .post_sm_2, .posts_container .post_sm_3, .posts_container .post_sm_4 {
+    margin: 3em 2.07% 2em 2.07%;
+    height: 16.6875em;
+    width: 20.8%;
+    background-color: white; }
+    .posts_container .post_sm_1 p, .posts_container .post_sm_2 p, .posts_container .post_sm_3 p, .posts_container .post_sm_4 p {
+      font-family: "Myriad Pro";
+      font-size: 0.875em;
+      color: #566375;
+      line-height: 1.286;
+      text-align: center;
+      padding-top: 1em;
+      height: 2.4em; }
+    .posts_container .post_sm_1 img, .posts_container .post_sm_2 img, .posts_container .post_sm_3 img, .posts_container .post_sm_4 img {
+      margin-left: 4em;
+      margin-top: 7em;
+      position: static; }
+      .posts_container .post_sm_1 img:hover, .posts_container .post_sm_2 img:hover, .posts_container .post_sm_3 img:hover, .posts_container .post_sm_4 img:hover {
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); }
+  .posts_container .post_sm_1 {
+    background-image: url("img/bg_post_sm_1.png");
+    background-repeat: no-repeat; }
+    .posts_container .post_sm_1 hr {
+      position: static;
+      text-align: center;
+      margin-left: -0.95em;
+      margin-top: -2.1em;
+      border: none;
+      width: 117%;
+      background-color: #1baf5d;
+      height: 3px; }
+    .posts_container .post_sm_1 p#post_title {
+      color: #1baf5d; }
+  .posts_container .post_sm_2 {
+    background-image: url("img/bg_post_sm_2.png");
+    background-repeat: no-repeat; }
+    .posts_container .post_sm_2 hr {
+      position: static;
+      text-align: center;
+      margin-left: -0.95em;
+      margin-top: -2.1em;
+      border: none;
+      width: 117%;
+      background-color: #f19e1f;
+      height: 3px; }
+    .posts_container .post_sm_2 p#post_title {
+      color: #f19e1f; }
+  .posts_container .post_sm_3 {
+    background-image: url("img/bg_post_sm_3.png");
+    background-repeat: no-repeat; }
+    .posts_container .post_sm_3 hr {
+      position: static;
+      text-align: center;
+      margin-left: -0.95em;
+      margin-top: -2.1em;
+      border: none;
+      width: 117%;
+      background-color: #88499c;
+      height: 3px; }
+    .posts_container .post_sm_3 p#post_title {
+      color: #88499c; }
+  .posts_container .post_sm_4 {
+    background-image: url("img/bg_post_sm_4.png");
+    background-repeat: no-repeat; }
+    .posts_container .post_sm_4 hr {
+      position: static;
+      text-align: center;
+      margin-left: -0.95em;
+      margin-top: -2.1em;
+      border: none;
+      width: 117%;
+      background-color: #1baf5d;
+      height: 3px; }
+    .posts_container .post_sm_4 p#post_title {
+      color: #1baf5d; }
+  .posts_container p#post_title {
+    padding-top: 0;
+    font-size: 0.75em;
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+    line-height: 4;
+    text-align: center; }
+  .posts_container .post_lg_1, .posts_container .post_lg_2 {
+    background-color: white;
+    box-shadow: 0px 1px 0px 0px rgba(226, 222, 224, 0.004);
+    width: 45.7%;
+    height: 16.875em;
+    margin: 0 2.07% 2em 2.07%; }
+  .posts_container .post_lg_1 {
+    background-image: url("img/bg_post_lg_1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-left: 0px;
+    padding-left: 0px; }
+  .posts_container .post_lg_1_head {
+    background-image: -moz-linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.99) 0.1%, transparent 50%);
+    background-image: -webkit-linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.99) 0.1%, transparent 50%);
+    background-image: -ms-linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.99) 0.1%, transparent 50%);
+    width: 100%;
+    height: 45%; }
+    .posts_container .post_lg_1_head p {
+      color: white;
+      text-transform: uppercase;
+      text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.15);
+      padding-top: 5.1em;
+      padding-left: 5em;
+      font-size: 1.125em;
+      font-family: "GothamBook";
+      color: white;
+      text-transform: uppercase;
+      text-align: left; }
+  .posts_container .post_lg_1_main img {
+    position: static;
+    margin-left: 1em;
+    margin-top: -1.9em; }
+    .posts_container .post_lg_1_main img:hover {
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+  .posts_container .post_lg_1_main hr {
+    position: static;
+    text-align: center;
+    margin-top: -2em;
+    border: none;
+    width: 103.5%;
+    background-color: #1baf5d;
+    height: 3px; }
+  .posts_container .post_lg_1_main_text {
+    display: table-row; }
+    .posts_container .post_lg_1_main_text p#feedback_text_1 {
+      color: #566375;
+      font-family: "GothamBook";
+      text-align: left;
+      font-size: 0.875em; }
+    .posts_container .post_lg_1_main_text img {
+      display: block;
+      margin-top: -0.8em;
+      margin-left: 1em;
+      padding-right: 1.4em;
+      padding-bottom: 2em;
+      float: left; }
+    .posts_container .post_lg_1_main_text h4 {
+      margin-top: -10px;
+      font-family: "gothambold1";
+      text-transform: uppercase; }
+  .posts_container .post_lg_2 {
+    background-image: url("img/bg_post_lg_2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-left: 0px;
+    padding-left: 0px; }
+  .posts_container .post_lg_2_head {
+    background-image: -moz-linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.99) 0.1%, transparent 50%);
+    background-image: -webkit-linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.99) 0.1%, transparent 50%);
+    background-image: -ms-linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.99) 0.1%, transparent 50%);
+    width: 100%;
+    height: 45%; }
+    .posts_container .post_lg_2_head p {
+      color: white;
+      text-transform: uppercase;
+      text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.15);
+      padding-top: 5.1em;
+      padding-left: 5em;
+      font-size: 1.125em;
+      font-family: "GothamBook";
+      color: white;
+      text-transform: uppercase;
+      text-align: left; }
+  .posts_container .post_lg_2_main img {
+    position: static;
+    margin-left: 1em;
+    margin-top: -1.9em; }
+    .posts_container .post_lg_2_main img:hover {
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+  .posts_container .post_lg_2_main hr {
+    position: static;
+    text-align: center;
+    margin-top: -2em;
+    border: none;
+    width: 103.5%;
+    background-color: #1baf5d;
+    height: 3px; }
+  .posts_container .post_lg_2_main_text {
+    display: table-row; }
+    .posts_container .post_lg_2_main_text p#feedback_text_2 {
+      color: #566375;
+      font-family: "GothamBook";
+      text-align: left;
+      font-size: 0.875em; }
+    .posts_container .post_lg_2_main_text img {
+      display: block;
+      margin-top: -0.8em;
+      margin-left: 1em;
+      padding-right: 1.4em;
+      padding-bottom: 2em;
+      float: left; }
+    .posts_container .post_lg_2_main_text h4 {
+      margin-top: -10px;
+      font-family: "gothambold1";
+      text-transform: uppercase; }
+  .posts_container .posts_mix_row_1 {
+    padding-left: 0px;
+    padding-right: 0px; }
 
 /*# sourceMappingURL=style.css.map */
