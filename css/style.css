@@ -128,15 +128,19 @@ body {
     border-radius: 4em; }
     .search_input input[type=text]:hover {
       background-color: rgba(255, 255, 255, 0.3); }
+  .search_input input#search_input_select {
+    background-image: url("img/ar_down.png");
+    background-repeat: no-repeat;
+    background-position: 90% 50%; }
   .search_input input[type="text"]::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.55); }
+    color: rgba(255, 255, 255, 0.8); }
   .search_input input[type="text"]:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.55); }
+    color: rgba(255, 255, 255, 0.8); }
   .search_input input[type="text"]::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.55); }
+    color: rgba(255, 255, 255, 0.8); }
   .search_input input[type="text"]:-moz-placeholder {
-    color: rgba(255, 255, 255, 0.55); }
-  .search_input input#input_d {
+    color: rgba(255, 255, 255, 0.8); }
+  .search_input input#input_data {
     width: 28em; }
   .search_input button[type="submit"] {
     display: block;
@@ -210,6 +214,9 @@ body {
       border: none;
       color: white; }
     .filter_input form #input_place_filter {
+      background-image: url("img/search_filter_ar_down.png");
+      background-repeat: no-repeat;
+      background-position: 87% 50%;
       border: 1px solid rgba(150, 166, 167, 0.9); }
       .filter_input form #input_place_filter:hover {
         background-color: #f0f0f0; }
@@ -221,8 +228,12 @@ body {
       color: rgba(233, 78, 56, 0.9); }
     .filter_input form input[type="text"]:-moz-placeholder {
       color: rgba(233, 78, 56, 0.9); }
-    .filter_input form input#input_map_filter:hover {
-      background-color: rgba(27, 175, 93, 0.9); }
+    .filter_input form input#input_map_filter {
+      background-image: url("img/search_filter_map_icon.png");
+      background-repeat: no-repeat;
+      background-position: 87% 50%; }
+      .filter_input form input#input_map_filter:hover {
+        background-color: rgba(27, 175, 93, 0.9); }
 
 .filter_icon_list ul {
   margin-left: -10px;
@@ -568,7 +579,7 @@ body {
       background-color: rgba(255, 255, 255, 0.2);
       border: 0.1px solid rgba(255, 255, 255, 0.3);
       border-radius: 4em;
-      height: 60px; }
+      height: 58px; }
     .bottom .subcribe_form input[type=text] {
       border: none;
       margin: 0 0 1.5em 1.5em;
@@ -577,7 +588,10 @@ body {
       height: 3em;
       display: inline-block;
       list-style-type: none;
-      background-color: transparent; }
+      background-color: transparent;
+      background-image: url("img/letter.png");
+      background-repeat: no-repeat;
+      background-position: 3% 55%; }
       .bottom .subcribe_form input[type=text]:focus {
         background-color: transparent; }
     .bottom .subcribe_form input[type="text"]::-webkit-input-placeholder {

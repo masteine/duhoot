@@ -38,7 +38,6 @@ body
 	li
 		display: inline
 		padding-left: 1em
-
 	a 
 		font-family: "GothamBook"
 		font-size: 0.875em
@@ -112,15 +111,19 @@ body
 		border-radius: 4em
 		&:hover
 			background-color: rgba(255, 255, 255, 0.3) 
+	input#search_input_select
+		background-image: url("#{$get-path-to-img}/ar_down.png")
+		background-repeat: no-repeat
+		background-position: 90% 50%
 	input[type="text"]::-webkit-input-placeholder 
-		color: rgba(255, 255, 255, 0.55) 
+		color: rgba(255, 255, 255, 0.8) 
 	input[type="text"]:-ms-input-placeholder
-		color: rgba(255, 255, 255, 0.55) 
+		color: rgba(255, 255, 255, 0.8) 
 	input[type="text"]::-moz-placeholder 
-		color: rgba(255, 255, 255, 0.55) 		
+		color: rgba(255, 255, 255, 0.8) 		
 	input[type="text"]:-moz-placeholder
-		color: rgba(255, 255, 255, 0.55) 	
-	input#input_d
+		color: rgba(255, 255, 255, 0.8) 	
+	input#input_data
 		width: 28em
 	button[type="submit"]
 		display: block
@@ -194,6 +197,9 @@ body
 			border: none
 			color: rgb(255, 255, 255)
 		#input_place_filter
+			background-image: url("#{$get-path-to-img}/search_filter_ar_down.png")
+			background-repeat: no-repeat
+			background-position: 87% 50%
 			border: 1px solid rgba(150, 166, 167, 0.9)
 			&:hover
 				background-color: rgb(240, 240, 240)
@@ -206,6 +212,9 @@ body
 		input[type="text"]:-moz-placeholder
 			color: rgba(233, 78, 56, 0.9) 
 		input#input_map_filter
+			background-image: url("#{$get-path-to-img}/search_filter_map_icon.png")
+			background-repeat: no-repeat
+			background-position: 87% 50%
 			&:hover
 				background-color: rgba(27, 175, 93, 0.9)
 .filter_icon_list
@@ -490,6 +499,9 @@ body
 			color: rgb(86, 99, 117)
 			&:hover
 				color: #365074
+// ===============				OFFER   =======================
+
+
 .offer
 	background-color: #f3f1f2
 	.offer_container	
@@ -538,6 +550,8 @@ body
 
 		p 
 			display: block
+// =========================    BOTTOM
+
 .bottom 
 	background-image: url("#{$get-path-to-img}/bg_bottom.png")
 	-webkit-background-size: cover
@@ -569,7 +583,7 @@ body
 			background-color: rgba(255, 255, 255, 0.2) 
 			border: 0.1px solid rgba(255, 255, 255, 0.3)
 			border-radius: 4em
-			height: 60px
+			height: 58px
 		input[type=text]
 			border: none
 			margin: 0 0 1.5em 1.5em
@@ -579,6 +593,9 @@ body
 			display: inline-block
 			list-style-type: none
 			background-color: transparent
+			background-image: url("#{$get-path-to-img}/letter.png")
+			background-repeat: no-repeat
+			background-position: 3% 55%
 			&:focus
 				background-color: transparent 
 		input[type="text"]::-webkit-input-placeholder 
