@@ -111,6 +111,14 @@ body
 		border-radius: 4em
 		&:hover
 			background-color: rgba(255, 255, 255, 0.3) 
+		&:focus::-webkit-input-placeholder
+			color: transparent
+		&:focus::-moz-placeholder
+			color: transparent		
+		&:focus:-moz-placeholder
+			color: transparent
+		&:focus:-ms-input-placeholder
+			color: transparent
 	input#search_input_select
 		background-image: url("#{$get-path-to-img}/ar_down.png")
 		background-repeat: no-repeat
@@ -255,8 +263,7 @@ body
 		height: 16.6875em
 		width: 20.8%
 		background-color: rgb(255, 255, 255)
-		background-size: 100% 100%
-		background-position: cover
+		z-index: 1
 		p 
 			font-family: "Myriad Pro"
 			font-size: 0.875em
@@ -276,8 +283,8 @@ body
 	.post_sm_1
 		background-image: url("#{$get-path-to-img}/bg_post_sm_1.png")
 		background-repeat: no-repeat
-		background-size: 100% 100%
-		background-position: cover
+		z-index: 2
+	
 		hr 
 			position: static
 			text-align: center
@@ -289,6 +296,7 @@ body
 			height: 3px
 		p#post_title
 			color: rgb(27, 175, 93)
+
 	.post_sm_2
 		background-image: url("#{$get-path-to-img}/bg_post_sm_2.png")
 		background-repeat: no-repeat
@@ -598,14 +606,14 @@ body
 			background-position: 3% 55%
 			&:focus
 				background-color: transparent 
-		input[type="text"]::-webkit-input-placeholder 
-			color: rgba(255, 255, 255, 0.55) 
-		input[type="text"]:-ms-input-placeholder
-			color: rgba(255, 255, 255, 0.55) 
-		input[type="text"]::-moz-placeholder 
-			color: rgba(255, 255, 255, 0.55) 		
-		input[type="text"]:-moz-placeholder
-			color: rgba(255, 255, 255, 0.55) 	
+			&:focus::-webkit-input-placeholder
+				color: transparent
+			&:focus::-moz-placeholder
+				color: transparent		
+			&:focus:-moz-placeholder
+				color: transparent
+			&:focus:-ms-input-placeholder
+				color: transparent
 		input[type="submit"]
 			float: right
 			display: inline-block
