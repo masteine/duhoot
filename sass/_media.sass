@@ -1,9 +1,14 @@
 @media (max-width: 1024px)
-
-
+	body
+		overflow-x: hidden
+	.bg_header
+		padding-left: 0
+		padding-right: 0
+	.posts_small_row_2 
+		margin-right: 0
+		margin-left: 0
 // 						991 px screen
 @media (max-width: 991px)
-
 	.search_row h2
 		padding: 1em 0 1em 0
 	.search_input form
@@ -23,22 +28,73 @@
 	.header_user_button button#header_login_btn
 		float: left
 		width: 75%
-
-	.topic li
-		padding-right: -10px
-
-	.filter_icon_list 
-		float: right
-		margin-right: auto
+	
+	.topic 
+		float: none
 		margin-left: auto
+		margin-right: auto
+		font-size: 1.25em
+	.topic ul
+		width: 100%
+	.topic li 
+		width: 33%
+		margin-left: 3%
+		margin-right: auto
+	.filter_icon_list
+		float: none
+		margin-left: auto
+		margin-right: auto
+	.filter_icon_list li#filter_icon_text
+		font-size: 1em
 
+	.filter_icon_list ul
+		width: 100%
+		margin-left: auto
+		margin-right: auto
+	.filter_input
+		float: none
+		margin-left: auto
+		margin-right: auto
+	.filter_input form
+		width: 100%	
+	.filter_input form input[type="text"]
+		width: 48%
+		height: 50px
+		padding-left: 5%
+		font-size: 1em
+	.filter_input form input[type="button"]
+		width: 48%
+		height: 50px
+		padding-left: 5%
+		font-size: 1em
+
+	.posts_container
+		padding-top: 1em
+		padding-right: 0
+	.posts_small_row_1
+		margin: auto
+		float: none
+	.posts_container .post_sm_1
+		width: 21%
+		margin: 0.5em 2%
+	.posts_container .post_sm_2
+		width: 21%
+		margin: 0.5em 2%
+	.posts_container .post_sm_3
+		width: 21%
+		margin: 0.5em 2%
+	.posts_container .post_sm_4
+		width: 21%
+		margin: 0.5em 2%
+
+	.posts_big_row_2 
+		margin: auto
+		float: none
 
 @media (max-width: 767px)
 
 	.search_input form
 		width: 100%	
-	.topic li a
-		padding-right: 2%
 	
 	.header_user_button button#header_search_btn
 		float: left
@@ -47,6 +103,28 @@
 		float: left
 		width: 75%
 		height: 5em
+	.topic ul
+		margin-left: 0
+
+	.filter_icon_list ul
+		margin-left: auto
+		margin-right: auto
+		padding-left: 1.8em
+	.filter_icon_list ul li 
+		margin-left: 1%
+	.posts_container .post_sm_1
+		width: 35%
+		margin: 1em 0 1em 10%
+	.posts_container .post_sm_2
+		width: 35%
+		margin: 1em 0 1em 10%
+	.posts_container .post_sm_3
+		width: 35%
+		margin: 1em 0 1em 10%
+	.posts_container .post_sm_4
+		width: 35%
+		margin: 1em 0 1em 10%
+
 
 @media (max-width: 480px)
 
@@ -58,7 +136,8 @@
 		float: left
 		width: 25%
 		i.fa.fa-user.fa-lg
-			margin-left: 20%
+			margin-left: 1vw
+			
 	.header_user_button span 
 		margin-left: 25%
 	.header_user_button span#header_login_text
@@ -70,3 +149,35 @@
 		width: 95%
 	.search_input input#input_data
 		width: 95%
+	.search_filter_container
+		padding-left: 0px
+		padding-right: 0px
+	.topic li 
+		padding-right: 5px
+	.filter_input form input#input_place_filter
+		width: 100%
+		margin-left: 0
+		margin-bottom: 10px
+	.filter_input form input#input_map_filter
+		width: 100%
+		background-position: 86.4% 50%
+
+	.filter_icon_list ul
+		padding-left: 1em
+	.filter_icon_list li#filter_icon_icon img
+		-ms-transform: scale(1.2)
+		-webkit-transform: scale(1.2)
+		transform: scale(1.2)
+
+	.posts_container .post_sm_1
+		width: 42%
+		margin: 1em 0 1em 4%
+	.posts_container .post_sm_2
+		width: 42%
+		margin: 1em 0 1em 4%
+	.posts_container .post_sm_3
+		width: 42%
+		margin: 1em 0 1em 4%
+	.posts_container .post_sm_4
+		width: 42%
+		margin: 1em 0 1em 4%
