@@ -1,6 +1,6 @@
 @import "fonts"
 @import "var"
-@import "media"
+// @import   @ / _media in the end of "style.sass"
 
 a 
 	text-decoration: none
@@ -16,7 +16,7 @@ button, input
 // ===		===		=== navigation - layout - 1 
 body
 	background-color: #f3f1f2
-	
+
 
 .header
 	background-image: url("#{$get-path-to-img}/bg_4_1.png")
@@ -25,7 +25,7 @@ body
 	-o-background-size: cover
 	background-size: cover
 	background-position: center center
-
+    
 
 .bg_header
 	background-color: rgb(255, 255, 255)
@@ -48,32 +48,35 @@ body
 			text-decoration: none
 			color: #e94e38
 
-
-.search_nav
-	
-	button 
-		width: 4.8em
+.header_user_button
+	overflow: hidden
+	margin-left: 0
+	margin-right: 0
+	padding-left: 0
+	padding-right: 0
+	button#header_search_btn 
+		float: left
+		width: 31%
 		height: 4.4em
 		border: none
 		background-color: #e2dee0
 		&:hover
 			background-color: #edeced
-.nav_login
-	margin-left: -0.7em
-	font-size: 0.875em
-	color: rgb(255, 255, 255)
-	button
+	button#header_login_btn
+		float: left
+		font-size: 0.875em
+		color: rgb(255, 255, 255)
 		text-align: left
-		width: 100%
+		width: 60%
 		height: 5em
 		background-color: #e94e38
 		font-family: "GothamBook"
 		&:hover 
 			border: none
 			background-color: #ee6653
-		span 
-			padding-left: 1em
-			padding-right: 0.5em
+		i.fa.fa-user.fa-lg
+			padding-left: 10%
+			padding-right: 10%
 		a 
 			text-transform: uppercase
 			display: block
@@ -82,10 +85,6 @@ body
 				color: rgb(255, 255, 255)
 				text-decoration: none
 // ================================== Search
-.search 
-
-.search_container
-
 .search_row
 	h2
 		padding: 1.8em 0 1em 0
@@ -102,7 +101,7 @@ body
 	input[type=text]
 		margin: 0 0 1.5em 1.5em
 		padding-left: 2em
-		width: 13em
+		width: 39%
 		height: 3.125em
 		display: inline-block
 		list-style-type: none
@@ -132,11 +131,10 @@ body
 	input[type="text"]:-moz-placeholder
 		color: rgba(255, 255, 255, 0.8) 	
 	input#input_data
-		width: 28em
+		width: 83%
 	button[type="submit"]
 		display: block
-		margin: 0 0 1.8em 10.5em
-		height: 3.125em
+		margin: 0 0 5% 35%
 		font-family: "GothamBook"
 		color: rgb(255, 255, 255)
 		text-transform: uppercase
@@ -226,9 +224,13 @@ body
 			&:hover
 				background-color: rgba(27, 175, 93, 0.9)
 .filter_icon_list
-
+	float: right
+	padding-right: 0
+	padding-left: 0
+	margin-left: 0
+	margin-bottom: 0
 	ul 
-		margin-left: -10px
+		margin-left: 0
 		margin-top: 1em
 		padding-left: 0
 	li
@@ -253,92 +255,253 @@ body
 .posts
 	background-color: #f3f1f2
 .posts_container
+	padding-right: 15px
 	padding-top: 2em
 	border-bottom: 1px solid rgba(150, 166, 167, 0.5)
-	.posts_small_row_1 
-		padding-left: 0px
-		padding-right: 0px
+
 	.post_sm_1, .post_sm_2, .post_sm_3, .post_sm_4
-		margin: 1em 2.07% 1em 2.07%
+		margin: 1em 0 1em 4%
 		height: 16.6875em
-		width: 20.8%
+		width: 20%
 		background-color: rgb(255, 255, 255)
 		z-index: 1
+		border-radius: 5px
+		-webkit-box-shadow: 1px 2px 3px 0px rgba(143,140,143,1)
+		-moz-box-shadow: 1px 2px 3px 0px rgba(143,140,143,1)
+		box-shadow: 1px 2px 3px 0px rgba(143,140,143,1)
 		p 
-			font-family: "Myriad Pro"
+			font-family: "GothamBook"
 			font-size: 0.875em
 			color: rgb(86, 99, 117)
 			line-height: 1.286
 			text-align: center
-			padding-top: 1em
 			height: 2.4em
+			padding: 1em 0.5em 0.2em 0.5em
+			font-weight: bold
+		p#post_title
+			font-family: "GothamBook"
 		img 
-			margin-left: 4em
-			margin-top: 7em
+			margin-left: 35%
+			margin-top: -1.9em
 			position: static
-			&:hover
-				-ms-transform: scale(1.1) /* IE 9 */
-				-webkit-transform: scale(1.1) /* Safari */
-				transform: scale(1.1) /* Standard syntax */
+			z-index: 12
 	.post_sm_1
-		background-image: url("#{$get-path-to-img}/bg_post_sm_1.png")
-		background-repeat: no-repeat
-		z-index: 2
-	
+		padding-right: 0
+		padding-left: 0
 		hr 
 			position: static
 			text-align: center
-			margin-left: -0.95em
-			margin-top: -2.1em
+			margin-top: -2em
 			border: none
-			width: 117%
+			width: 100%
+			height: 3px
 			background-color: rgb(27, 175, 93)
-			height: 3px
 		p#post_title
+			font-family: "GothamBook"
 			color: rgb(27, 175, 93)
-
+	.post_sm_1_img	
+		display: block
+		width: 100%
+		height: 53%
+		background-image: url("#{$get-path-to-img}/bg_post_sm_1.jpg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		border-radius: 3px 3px 0 0
+	.post_sm_1_img_animate
+		display: none
+		width: 100%
+		height: 53%
+		background: url("#{$get-path-to-img}/bg_post_sm_1_animate.jpg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		border-radius: 3px 3px 0 0
+		button
+			margin: 12% 0 0 15%
+			width: 141px
+			height: 35px
+			border: 2px solid rgb(255, 255, 255)
+			border-radius: 25px
+			background: rgb(27, 175, 93)
+			color: rgb(255, 255, 255)
+			font-family: "GothamBook"
+			font-size: 0.75em
+			text-transform: uppercase
+			&:hover
+				transform: scale(1.05)
+				-ms-transform: scale(1.05) /* IE 9 */
+				-webkit-transform: scale(1.05) /* Safari */
+			i 
+				padding-right: 10px
+		img#feedback_stars
+			display: inline-block
+			margin: 2% 0 0 1.5%
+		img#feedback_post
+			display: inline-block
+			margin: 2% 0 0 3%
 	.post_sm_2
-		background-image: url("#{$get-path-to-img}/bg_post_sm_2.png")
-		background-repeat: no-repeat
+		padding-right: 0
+		padding-left: 0
 		hr 
 			position: static
 			text-align: center
-			margin-left: -0.95em
-			margin-top: -2.1em
+			margin-top: -2em
 			border: none
-			width: 117%
+			width: 100%
+			height: 3px
 			background-color: rgb(241, 158, 31)
-			height: 3px
 		p#post_title
+			font-family: "GothamBook"
 			color: rgb(241, 158, 31)
-	.post_sm_3
-		background-image: url("#{$get-path-to-img}/bg_post_sm_3.png")
+	.post_sm_2_img	
+		width: 100%
+		height: 53%
+		background-image: url("#{$get-path-to-img}/bg_post_sm_2.jpg")
 		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		border-radius: 3px
+	.post_sm_2_img_animate
+		display: none
+		width: 100%
+		height: 53%
+		background: url("#{$get-path-to-img}/bg_post_sm_2_animate.jpg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		border-radius: 3px 3px 0 0
+		button
+			margin: 12% 0 0 15%
+			width: 141px
+			height: 35px
+			border: 2px solid rgb(255, 255, 255)
+			border-radius: 25px
+			background: rgb(241, 158, 31)
+			color: rgb(255, 255, 255)
+			font-family: "GothamBook"
+			font-size: 0.75em
+			text-transform: uppercase
+			&:hover
+				transform: scale(1.05)
+				-ms-transform: scale(1.05) /* IE 9 */
+				-webkit-transform: scale(1.05) /* Safari */
+			i 
+				padding-right: 10px
+		img#feedback_stars
+			display: inline-block
+			margin: 2% 0 0 1.5%
+		img#feedback_post
+			display: inline-block
+			margin: 2% 0 0 3%
+	.post_sm_3
+		padding-right: 0
+		padding-left: 0		
 		hr 
 			position: static
 			text-align: center
-			margin-left: -0.95em
-			margin-top: -2.1em
+			margin-top: -2em
 			border: none
-			width: 117%
-			background-color: rgb(136, 73, 156)
+			width: 100%
 			height: 3px
+			background-color: rgb(136, 73, 156)
 		p#post_title
 			color: rgb(136, 73, 156)
-	.post_sm_4
-		background-image: url("#{$get-path-to-img}/bg_post_sm_4.png")
+	.post_sm_3_img	
+		display: block
+		width: 100%
+		height: 53%
 		background-repeat: no-repeat
+		background: url("#{$get-path-to-img}/bg_post_sm_3.jpg")
+		background-position: center
+		background-size: cover
+		border-radius: 3px 3px 0 0
+	.post_sm_3_img_animate
+		display: none
+		width: 100%
+		height: 53%
+		background: url("#{$get-path-to-img}/bg_post_sm_3_animate.jpg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		border-radius: 3px 3px 0 0
+		button
+			margin: 12% 0 0 15%
+			width: 141px
+			height: 35px
+			border: 2px solid rgb(255, 255, 255)
+			border-radius: 25px
+			background: rgb(136, 73, 156)
+			color: rgb(255, 255, 255)
+			font-family: "GothamBook"
+			font-size: 0.75em
+			text-transform: uppercase
+			&:hover
+				transform: scale(1.05)
+				-ms-transform: scale(1.05) /* IE 9 */
+				-webkit-transform: scale(1.05) /* Safari */
+			i 
+				padding-right: 10px
+		img#feedback_stars
+			display: inline-block
+			margin: 2% 0 0 1.5%
+		img#feedback_post
+			display: inline-block
+			margin: 2% 0 0 3%
+	.post_sm_4
+		padding-right: 0
+		padding-left: 0
 		hr 
 			position: static
 			text-align: center
-			margin-left: -0.95em
-			margin-top: -2.1em
+			margin-top: -2em
 			border: none
-			width: 117%
+			width: 100%
+			height: 3px
 			background-color: rgb(27, 175, 93)	
-			height: 3px	
 		p#post_title
 			color: rgb(27, 175, 93)
+	.post_sm_4_img	
+		display: block
+		width: 100%
+		height: 53%
+		background-repeat: no-repeat
+		background-image: url("#{$get-path-to-img}/bg_post_sm_4.jpg")
+		background-position: center
+		background-size: cover
+		border-radius: 3px 3px 0 0
+	.post_sm_4_img_animate
+		display: none
+		width: 100%
+		height: 53%
+		background: url("#{$get-path-to-img}/bg_post_sm_4_animate.jpg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		border-radius: 3px 3px 0 0
+		button
+			margin: 12% 0 0 15%
+			width: 141px
+			height: 35px
+			border: 2px solid rgb(255, 255, 255)
+			border-radius: 25px
+			background: rgb(27, 175, 93)
+			color: rgb(255, 255, 255)
+			font-family: "GothamBook"
+			font-size: 0.75em
+			text-transform: uppercase
+			&:hover
+				transform: scale(1.05)
+				-ms-transform: scale(1.05) /* IE 9 */
+				-webkit-transform: scale(1.05) /* Safari */
+			i 
+				padding-right: 10px
+		img#feedback_stars
+			display: inline-block
+			margin: 2% 0 0 1.5%
+		img#feedback_post
+			display: inline-block
+			margin: 2% 0 0 3%
 	p#post_title
 		padding-top: 0
 		font-size: 0.75em
@@ -347,155 +510,163 @@ body
 		line-height: 4
 		text-align: center
 
-	.posts_big_row_2
-		padding-left: 0px
-		padding-right: 0px
 	.post_lg_1, .post_lg_2
 		background-color: rgb(255, 255, 255)
-		box-shadow: 0px 1px 0px 0px rgba(226, 222, 224, 0.004)
-		width: 45.7%
+		width: 44%
 		height: 16.875em
-		margin: 1em 2.07% 1em 2.07%
+		margin: 1em 0 1em 4%
+		-webkit-box-shadow: 1px 2px 3px 0px rgba(143,140,143,1)
+		-moz-box-shadow: 1px 2px 3px 0px rgba(143,140,143,1)
+		box-shadow: 1px 2px 3px 0px rgba(143,140,143,1)
+		border-radius: 5px
 
 	.post_lg_1
-		background-image: url("#{$get-path-to-img}/bg_post_lg_1.png")
-		background-repeat: no-repeat
-		background-size: 100%
-		padding-left: 0px
+		padding-right: 0px
 		padding-left: 0px
 	.post_lg_1_head
-		background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.99) 0.1%, rgba(0,0,0,0.0) 50%)
-		background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.99) 0.1%, rgba(0,0,0,0.0) 50%)
-		background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.99) 0.1%, rgba(0,0,0,0.0) 50%)
 		width: 100%
 		height: 45%
+		background-image: url("#{$get-path-to-img}/bg_post_lg_1.png")
+		background-repeat: no-repeat
+		background-size: cover
+		border-radius: 5px
 		p
 			color: rgb(255, 255, 255)
 			text-transform: uppercase
 			text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.15)
-			padding-top: 5.1em
-			padding-left: 5em
 			font-size: 1.125em
 			font-family: "GothamBook"
 			color: rgb(255, 255, 255)
 			text-transform: uppercase
 			text-align: left
-	.post_lg_1_main
-		img 
-			position: static
-			margin-left: 1em
-			margin-top: -1.9em
-			&:hover
-				-ms-transform: scale(1.1) /* IE 9 */
-				-webkit-transform: scale(1.1) /* Safari */
-				transform: scale(1.1) /* Standard syntax */
-		hr 
-			position: static
-			text-align: center
-			margin-top: -2em
-			border: none
-			width: 103.5%
-			background-color: rgb(27, 175, 93)
-			height: 3px
+			padding-top: 4.75em
+			padding-left: 5.75em
+	img 
+		position: static
+		margin-left: 1.2em
+		margin-top: -2em
+	hr 
+		position: static
+		text-align: center
+		border: none
+		width: 100%
+		background-color: rgb(27, 175, 93)
+		height: 3px
+
 	.post_lg_1_main_text
 		display: table-row
+		p#post_lg_stars
+			margin: 0
+			padding: 0
+			text-align: center
+		p#feedback_img_1
+			margin-top: 1em
 		p#feedback_text_1
-
 			color: rgb(86, 99, 117)
 			font-family: "GothamBook"
 			text-align: left
 			font-size: 0.875em
+			line-height: 1.3
+			padding-right: 3px
 		img 
 			display: block
 			margin-top: -0.8em
-			margin-left: 1em
-			padding-right: 1.4em
+			margin-left: 1.2em
+			padding-right: 0.8em
 			padding-bottom: 2em
 			float: left
 		h4
-			margin-top: -10px
+			margin: -14px 0 0 0
 			font-family: "gothambold1"
 			text-transform: uppercase
+		a#read_more_feedback_1
+			font-weight: bold
+			text-decoration: underline
+			color: rgb(86, 99, 117)
 
 	.post_lg_2
-		background-image: url("#{$get-path-to-img}/bg_post_lg_2.png")
-		background-repeat: no-repeat
-		background-size: 100%
-		padding-left: 0px
+		padding-right: 0px
 		padding-left: 0px
 	.post_lg_2_head
-		background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.99) 0.1%, rgba(0,0,0,0.0) 50%)
-		background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.99) 0.1%, rgba(0,0,0,0.0) 50%)
-		background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.99) 0.1%, rgba(0,0,0,0.0) 50%)
 		width: 100%
 		height: 45%
+		background-image: url("#{$get-path-to-img}/bg_post_lg_2.png")
+		background-repeat: no-repeat
+		background-size: cover
+		border-radius: 5px
 		p
 			color: rgb(255, 255, 255)
 			text-transform: uppercase
 			text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.15)
-			padding-top: 5.1em
-			padding-left: 5em
 			font-size: 1.125em
 			font-family: "GothamBook"
 			color: rgb(255, 255, 255)
 			text-transform: uppercase
 			text-align: left
-	.post_lg_2_main
-		img 
-			position: static
-			margin-left: 1em
-			margin-top: -1.9em
-			&:hover
-				-ms-transform: scale(1.1) /* IE 9 */
-				-webkit-transform: scale(1.1) /* Safari */
-				transform: scale(1.1) /* Standard syntax */
-		hr 
-			position: static
-			text-align: center
-			margin-top: -2em
-			border: none
-			width: 103.5%
-			background-color: rgb(27, 175, 93)
-			height: 3px
+			padding-top: 4.75em
+			padding-left: 5.75em
+	img 
+		position: static
+		margin-left: 1.2em
+		margin-top: -2em
+	hr 
+		position: static
+		text-align: center
+		margin-top: -2em
+		border: none
+		width: 100%
+		background-color: rgb(27, 175, 93)
+		height: 3px
 	.post_lg_2_main_text
 		display: table-row
+		p#post_lg_stars
+			margin: 0
+			padding: 0
+			text-align: center
+		p#feedback_img_2
+			margin-top: 1em
 		p#feedback_text_2
-
 			color: rgb(86, 99, 117)
 			font-family: "GothamBook"
 			text-align: left
 			font-size: 0.875em
+			line-height: 1.3
+			padding-right: 3px
 		img 
 			display: block
 			margin-top: -0.8em
-			margin-left: 1em
-			padding-right: 1.4em
+			margin-left: 1.2em
+			padding-right: 0.8em
 			padding-bottom: 2em
 			float: left
 		h4
-			margin-top: -10px
+			margin: -14px 0 0 0
 			font-family: "gothambold1"
 			text-transform: uppercase
+		a#read_more_feedback_2
+			font-weight: bold
+			text-decoration: underline
+			color: rgb(86, 99, 117)
 
 	.posts_mix_row_1
-		padding-left: 0
-		padding-right: 0
-		margin-left: 0.7%
-		margin-right: 0
+		padding-left: 15px
 		.post_lg_2, .post_lg_1
-			width: 47.1%
-			margin-left: 0
+			width: 45.5%
+			margin-left: 2.5%
+			height: 16.75em
+		p#feedback_text_2
+			padding-right: 3px
 		.post_sm_1, .post_sm_2, .post_sm_3, .post_sm_4
 			height: 16.6875em
-			width: 21.5%
+			width: 20.8%
+			margin-left: 4%
 			background-color: rgb(255, 255, 255)
-		.post_sm_2, .post_sm_4
-			margin-right: 0
+
+
 
 	p#lead_more_posts 
-		margin: 1.5% 0 2% 0
+		margin: 2% 0 3% 0
 		font-size: 1.125em
-		color: #566375
 		font-family: "GothamBook"
 		line-height: 2.667
 		width: 100%
@@ -506,14 +677,12 @@ body
 		a
 			color: rgb(86, 99, 117)
 			&:hover
-				color: #365074
+				color: rgb(86, 50, 154)
 // ===============				OFFER   =======================
 
 
 .offer
 	background-color: #f3f1f2
-	.offer_container	
-	
 	.offer_title
 		margin: 5.62em 0 4.3em 0
 		text-align: center
@@ -567,8 +736,6 @@ body
 	-o-background-size: cover
 	background-size: cover
 	background-position: center center
-	.bg_bottom
-	.bottom_container
 
 	.bottom_title
 		padding: 2.5em 0 2em 0
@@ -617,7 +784,7 @@ body
 		input[type="submit"]
 			float: right
 			display: inline-block
-			margin: 3.5px
+			margin: 3px
 			height: 50px
 			width: 120px
 			font-family: "GothamBook"
@@ -643,7 +810,6 @@ body
 			font-size: 0.875em
 			color: rgb(192, 190, 188)
 			line-height: 1.714
-	.feedback_row_copyright
 
 		p#feedback_icon
 			text-decoration: none
@@ -655,3 +821,6 @@ body
 			text-decoration: none
 			font-size: 0.875em
 
+
+// import @media
+@import "media"
