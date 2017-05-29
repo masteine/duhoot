@@ -1,6 +1,6 @@
 @media (max-width: 1024px)
 	body
-		overflow-x: hidden
+		
 	.bg_header
 		padding-left: 0
 		padding-right: 0
@@ -9,6 +9,9 @@
 		margin-left: 0
 // 						991 px screen
 @media (max-width: 991px)
+	.row 
+		margin-left: 0px
+		margin-right: 0px
 	.search_row h2
 		padding: 1em 0 1em 0
 	.search_input form
@@ -71,25 +74,28 @@
 	.posts_container
 		padding-top: 1em
 		padding-right: 0
-	.posts_small_row_1
-		margin: auto
-		float: none
-	.posts_container .post_sm_1
-		width: 21%
-		margin: 0.5em 2%
-	.posts_container .post_sm_2
-		width: 21%
-		margin: 0.5em 2%
-	.posts_container .post_sm_3
-		width: 21%
-		margin: 0.5em 2%
-	.posts_container .post_sm_4
-		width: 21%
-		margin: 0.5em 2%
+	.posts_container .posts_small_row_1
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+	.posts_container .post_sm_1, .posts_container .post_sm_2,
+	.posts_container .post_sm_3, .posts_container .post_sm_4
+		width: 22%
+		min-width: 210px
+		margin: 2% 4% 2% 4%
 
-	.posts_big_row_2 
-		margin: auto
-		float: none
+
+	.posts_container .post_sm_1_img_animate button, .posts_container .post_sm_2_img_animate button,
+	.posts_container .post_sm_3_img_animate button, .posts_container .post_sm_4_img_animate button
+		width: 80%
+		margin: 12% 0 0 10% 
+
+	.posts_big_row_2 .post_lg_1
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+
+		
 
 @media (max-width: 767px)
 
@@ -109,21 +115,9 @@
 	.filter_icon_list ul
 		margin-left: auto
 		margin-right: auto
-		padding-left: 1.8em
+		padding-left: 5%
 	.filter_icon_list ul li 
 		margin-left: 1%
-	.posts_container .post_sm_1
-		width: 35%
-		margin: 1em 0 1em 10%
-	.posts_container .post_sm_2
-		width: 35%
-		margin: 1em 0 1em 10%
-	.posts_container .post_sm_3
-		width: 35%
-		margin: 1em 0 1em 10%
-	.posts_container .post_sm_4
-		width: 35%
-		margin: 1em 0 1em 10%
 
 
 @media (max-width: 480px)
@@ -169,15 +163,4 @@
 		-webkit-transform: scale(1.2)
 		transform: scale(1.2)
 
-	.posts_container .post_sm_1
-		width: 42%
-		margin: 1em 0 1em 4%
-	.posts_container .post_sm_2
-		width: 42%
-		margin: 1em 0 1em 4%
-	.posts_container .post_sm_3
-		width: 42%
-		margin: 1em 0 1em 4%
-	.posts_container .post_sm_4
-		width: 42%
-		margin: 1em 0 1em 4%
+
