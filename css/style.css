@@ -686,7 +686,7 @@ body {
       min-width: 200px;
       z-index: 1;
       border-radius: 5px;
-      margin: 2em 0 0 3.8%;
+      margin: 2.1em 0 0 3.8%;
       background-color: white; }
   .posts_container p#lead_more_posts {
     margin: 2% 0 3% 0;
@@ -932,8 +932,7 @@ body {
     font-size: 1em; }
 
   .posts_container {
-    padding-top: 1em;
-    padding-right: 0; }
+    padding: 3% 0 3% 0; }
 
   .posts_container .posts_small_row_1 {
     display: flex;
@@ -944,7 +943,7 @@ body {
   .posts_container .post_sm_3, .posts_container .post_sm_4 {
     max-width: 22%;
     min-width: 200px;
-    margin: 2% 1% 2% 1%; }
+    margin: 20px 1%; }
 
   .posts_container .post_sm_1_img_animate button, .posts_container .post_sm_2_img_animate button,
   .posts_container .post_sm_3_img_animate button, .posts_container .post_sm_4_img_animate button {
