@@ -280,7 +280,7 @@ body {
 .posts_container {
   padding-top: 2em;
   border-bottom: 1px solid rgba(150, 166, 167, 0.5); }
-  .posts_container .posts_small_row_1 {
+  .posts_container .posts_small_row_1, .posts_container .posts_small_row_2 {
     display: flex;
     Justify-content: space-between; }
   .posts_container .post_sm_1, .posts_container .post_sm_2, .posts_container .post_sm_3, .posts_container .post_sm_4 {
@@ -537,7 +537,8 @@ body {
     Justify-content: space-between; }
   .posts_container .post_lg_1, .posts_container .post_lg_2 {
     background-color: white;
-    width: 435px;
+    max-width: 45.4%;
+    min-width: 315px;
     height: 270px;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -673,15 +674,19 @@ body {
   .posts_container .posts_mix_row_1 {
     padding-left: 15px; }
     .posts_container .posts_mix_row_1 .post_lg_2, .posts_container .posts_mix_row_1 .post_lg_1 {
-      width: 45.5%;
-      margin-left: 2.5%;
-      height: 16.75em; }
+      max-width: 46.6%;
+      min-width: 315px;
+      height: 270px;
+      margin-left: 1.6%; }
     .posts_container .posts_mix_row_1 p#feedback_text_2 {
       padding-right: 3px; }
     .posts_container .posts_mix_row_1 .post_sm_1, .posts_container .posts_mix_row_1 .post_sm_2, .posts_container .posts_mix_row_1 .post_sm_3, .posts_container .posts_mix_row_1 .post_sm_4 {
-      height: 16.6875em;
-      width: 20.8%;
-      margin-left: 4%;
+      height: 267px;
+      max-width: 23%;
+      min-width: 200px;
+      z-index: 1;
+      border-radius: 5px;
+      margin: 2em 0 0 3.8%;
       background-color: white; }
   .posts_container p#lead_more_posts {
     margin: 2% 0 3% 0;
@@ -739,7 +744,7 @@ body {
       margin-right: 2em;
       float: left;
       display: block;
-      padding: 0.7em 0 3.6em 0; }
+      padding: 0.7em 0 4em 0; }
     .offer .offer_info_p_1 p, .offer .offer_info_p_2 p {
       display: block; }
 
@@ -831,6 +836,14 @@ body {
       padding-top: 0.8em;
       text-decoration: none;
       font-size: 0.875em; }
+  .bottom .feedback_row_1, .bottom .feedback_row_2 {
+    width: 50%;
+    float: left; }
+  .bottom .feedback_row_copyright {
+    margin: 3% 0 0 0;
+    float: right;
+    width: 50%;
+    padding-left: 0px; }
 
 @media (max-width: 1024px) {
   .bg_header {
@@ -929,19 +942,70 @@ body {
 
   .posts_container .post_sm_1, .posts_container .post_sm_2,
   .posts_container .post_sm_3, .posts_container .post_sm_4 {
-    width: 22%;
-    min-width: 210px;
-    margin: 2% 4% 2% 4%; }
+    max-width: 22%;
+    min-width: 200px;
+    margin: 2% 1% 2% 1%; }
 
   .posts_container .post_sm_1_img_animate button, .posts_container .post_sm_2_img_animate button,
   .posts_container .post_sm_3_img_animate button, .posts_container .post_sm_4_img_animate button {
     width: 80%;
     margin: 12% 0 0 10%; }
 
-  .posts_big_row_2 .post_lg_1 {
+  .posts_container .posts_big_row_2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; } }
+    Justify-content: center; }
+
+  .posts_container .posts_big_row_2 .post_lg_1, .posts_container .posts_big_row_2 .post_lg_2 {
+    margin-left: 1%;
+    margin-right: 1%; }
+
+  .posts_container .posts_small_row_2 {
+    display: none; }
+
+  .posts_mix_row_1 {
+    display: none; }
+
+  .offer .offer_title {
+    margin: 4em 0 1em 0; }
+
+  .offer_container .offer_icon_row {
+    margin: 0 2%; }
+
+  .offer_container .offer_icon_row .offer_icon {
+    display: flex;
+    flex-wrap: wrap;
+    Justify-content: center;
+    transform: scale(0.7);
+    margin: 0; }
+
+  .offer_container .offer_icon_row .offer_icon img {
+    margin: 2% 2%; }
+
+  .offer_container .offer_icon_row .offer_icon #offer_hr {
+    display: none; }
+
+  .offer .offer_container .offer_info {
+    padding-left: 0; }
+
+  .offer .offer_container .offer_info .offer_info_p_1, .offer .offer_container .offer_info .offer_info_p_2 {
+    margin-left: 0;
+    width: 50%; }
+
+  .bottom .subcribe_form form {
+    width: 75%; }
+
+  .bottom .subcribe_form form input[type="submit"] {
+    width: 30%;
+    padding: 0 5px; }
+
+  .bottom .feedback .feedback_row_copyright {
+    margin-top: 15px;
+    float: left;
+    width: 100%; }
+
+  .bottom .feedback .feedback_row_copyright p#feedback_icon img {
+    padding: 0 8px 0 0; } }
 @media (max-width: 767px) {
   .search_input form {
     width: 100%; }
@@ -964,7 +1028,23 @@ body {
     padding-left: 5%; }
 
   .filter_icon_list ul li {
-    margin-left: 1%; } }
+    margin-left: 1%; }
+
+  .posts_container .posts_big_row_2 {
+    display: none; }
+
+  .offer .offer_container .offer_info .offer_info_p_1, .offer .offer_container .offer_info .offer_info_p_2 {
+    width: 100%; }
+
+  .bottom .subcribe_form {
+    font-size: 0.75em; }
+
+  .bottom .subcribe_form form {
+    width: 100%; }
+
+  .bottom .subcribe_form form input[type="text"] {
+    background-image: none;
+    margin: 8px 0 0 0; } }
 @media (max-width: 480px) {
   .header_user_button button#header_search_btn {
     margin-left: 50%;
@@ -1012,8 +1092,9 @@ body {
     padding-left: 1em; }
 
   .filter_icon_list li#filter_icon_icon img {
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2); } }
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.21);
+    transform: scale(1.1);
+    padding: 5px 0; } }
 
 /*# sourceMappingURL=style.css.map */
