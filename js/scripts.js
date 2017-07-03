@@ -49,3 +49,5 @@ postHoverAnimated(jQuery(".posts_mix_row_1 > .post_sm_4 > .post_sm_4_img"),
 	jQuery(".posts_mix_row_1 > .post_sm_4 > .post_sm_4_img_animate"));
 
 // for activate icon filter in search layout
+// 2 
+// 2
